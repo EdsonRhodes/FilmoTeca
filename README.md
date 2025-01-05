@@ -47,3 +47,12 @@
 
 **Consulta ao filme:**
 
+### Resumo:
+- Você cria uma **entidade** `Filme` para representar os dados do filme no banco de dados.
+- Um **repositório** é criado para facilitar o acesso ao banco.
+- O **serviço** contém a lógica para salvar o filme.
+- O **controlador** gerencia as requisições HTTP e chama os métodos do serviço.
+- A **página HTML** contém o formulário de cadastro para inserir os dados do filme.
+
+
+
