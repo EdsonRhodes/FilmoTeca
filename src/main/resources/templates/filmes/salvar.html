@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Salvar Filme</title>
+</head>
+<body>
+<h1>Adicionar Novo Filme</h1>
+
+<form th:action="@{/filmes/salvar}" th:object="${filme}" method="post">
+    <label>Nome:</label>
+    <input type="text" th:field="*{nome}" /><br>
+
+    <label>Gênero:</label>
+    <input type="text" th:field="*{genero}" /><br>
+
+    <label>Ano:</label>
+    <input type="number" th:field="*{ano}" /><br>
+
+    <label>Duração (minutos):</label>
+    <input type="number" th:field="*{duracao}" /><br>
+
+    <button type="submit">Salvar</button>
+</form>
+</body>
+</html>
