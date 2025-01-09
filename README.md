@@ -25,7 +25,7 @@
 1. Crie o banco de dados `Filmoteca` e a tabela `filmes`:
 
     ```sql
-    CREATE TABLE filmes (
+    CREATE TABLE filme (
         id SERIAL PRIMARY KEY,
         titulo TEXT NOT NULL,
         ano INT NOT NULL,
