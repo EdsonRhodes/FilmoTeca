@@ -36,12 +36,15 @@
 
 2. Ajuste as credenciais de acesso ao banco na classe `Filme`.
 
-3. Compile e execute o código:
+3. Abrir o Projeto no IntelliJ IDE
+   
+Selecione Open e navegue até a pasta do repositório que você acabou de clonar.
+Clique em OK.
 
-    ```bash
-    javac Filme.java
-    java Filme
-    ```
+4. Rodando o Projeto
+Após abrir o projeto no IntelliJ, clique no botão Run no canto superior direito ou use o atalho Shift + F10.
+O IntelliJ compilará e executará automaticamente o código.
+após rodar o servidor, você poderá acessar o projeto no navegador em http://localhost:8080.
 
 ## Exemplos 📊
 
