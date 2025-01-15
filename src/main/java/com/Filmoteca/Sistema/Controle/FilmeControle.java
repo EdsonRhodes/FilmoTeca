@@ -1,6 +1,6 @@
 package com.Filmoteca.Sistema.Controle;
 
-import com.Filmoteca.Sistema.Modelo.Filme;
+import com.Filmoteca.Sistema.Modelo.filme;
 import com.Filmoteca.Sistema.Servico.FilmeServico;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,17 +21,20 @@ public class FilmeControle {
         this.filmeServico = filmeServico;
     }
 
-    // Exibe o formulário para cadastrar um novo filme
+    // Exibir o formulário para adicionar um novo filme
     @GetMapping("/novo")
-    public String exibirFormularioCadastro(Model model) {
-        model.addAttribute("filme", new Filme()); // Adiciona um objeto Filme vazio ao modelo
-        return "filmes/novo"; // Retorna o nome do template
+    public String novo(Model model) {
+        model.addAttribute("filme", new filme());
+        return "filmes/salvar";  // Nome do arquivo HTML
     }
 
-    // Processa o formulário e salva o filme no banco de dados
+    // Método para salvar o filme
     @PostMapping("/salvar")
-    public String salvarFilme(@ModelAttribute Filme filme) {
-        filmeServico.salvarFilme(filme);  // Chama o serviço para salvar o filme
-        return "redirect:/filmes/novo";   // Redireciona de volta para o formulário para cadastrar outro filme
+    public String salvar(@ModelAttribute filme filme) {
+        // Chamar o serviço para salvar o filme
+        filmeServico.salvarFilme(filme);
+
+        // Redirecionar para a página do formulário após salvar
+        return "redirect:/filmes/novo";
     }
 }

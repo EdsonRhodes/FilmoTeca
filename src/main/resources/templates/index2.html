@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilMoteca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            background-image: url('imagens/DALL·.webp');
+            font-family: 'Poppins', sans-serif;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 100vh; 
+        }
+        
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        header .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .search-bar {
+            width: 50%;
+            max-width: 500px;
+            padding: 10px 15px;
+            font-size: 18px;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .search-bar {
+                width: 80%;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">FilMoteca</div>
+    <div class="menu-icon">&#9776;</div>
+</header>
+
+<div class="search-container">
+    <input type="text" class="search-bar" placeholder="Busque seu filme favorito...">
+</div>
+
+</body>
+</html>
