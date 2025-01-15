@@ -24,7 +24,7 @@
 
 1. Crie o banco de dados `Filmoteca` e a tabela `filmes`:
 
-    ```sql
+   sql
 CREATE TABLE filme (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(100),
@@ -33,7 +33,6 @@ CREATE TABLE filme (
     duracao INTEGER
 );
 
-    ```
 
 2. Ajuste as credenciais de acesso ao banco na classe `Filme`.
 
